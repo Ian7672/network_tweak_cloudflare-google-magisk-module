@@ -1,0 +1,177 @@
+# This file will be read by# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+#
+# Internet Tweaks
+#
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,524288,1048576,2097152
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo=4096,87380,563200,4096,16384,262144
+net.tcp.buffersize.evdo_b=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,87380,1048576
+net.tcp.buffersize.hspa=6144,87380,524288,6144,16384,262144
+net.tcp.buffersize.hspap=4096,87380,1220608,4096,16384,393216
+net.tcp.buffersize.hsupa=4096,87380,704512,4096,16384,262144
+ro.ril.hsxpa=2
+ro.ril.hspa=2
+ro.ril.lte=2
+ro.ril.ltea=2
+ro.ril.hep=0
+ro.ril.def.agps.mode=2
+ro.ril.enable.3g.prefix=1
+ro.ril.enable.4g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.enable.dtm=1
+ro.ril.hspaclass=15
+ro.ril.lteclass=15
+ro.ril.gprsclass=15
+ro.ril.hsupa.category=10
+ro.ril.hsdpa.category=30
+ro.ril.lte.category=10
+ro.ril.ltea.category=30
+ro.ril.enable.a51=1
+ro.ril.enable.a52=1
+ro.ril.enable.a53=1
+ro.ril.enable.a54=1
+ro.ril.enable.a55=1
+
+
+#
+# Wireless + TCP Speed & Security Tweaks
+#
+net.core.wmem_max=1048576
+net.core.rmem_max=1048576
+net.core.rmem_default=262144
+net.core.wmem_default=262144
+net.core.optmem_max=20480
+net.unix.max_dgram_qlen=50
+net.ipv4.tcp_ecn=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_wmem=4096 39000 187000
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv6.tcp_ecn=0
+net.ipv6.route.flush=1
+net.ipv6.tcp_rfc1337=1
+net.ipv6.ip_no_pmtu_disc=0
+net.ipv6.tcp_sack=1
+net.ipv6.tcp_fack=1
+net.ipv6.tcp_window_scaling=1
+net.ipv6.tcp_timestamps=1
+net.ipv6.tcp_rmem=4096 39000 187000
+net.ipv6.tcp_wmem=4096 39000 187000
+net.ipv6.tcp_mem=187000 187000 187000
+net.ipv6.tcp_no_metrics_save=1
+net.ipv6.tcp_moderate_rcvbuf=1
+net.tethering.noprovisioning=true
+
+
+#
+# DNS Tweaks
+#
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=1.1.1.1
+
+net.rmnet1.dns1=8.8.8.8
+net.rmnet1.dns2=1.1.1.1
+
+net.dns1=8.8.8.8
+net.dns2=1.1.1.1
+
+net.gprs.dns1=8.8.8.8
+net.gprs.dns2=1.1.1.1
+
+net.wcdma.dns1=8.8.8.8
+net.wcdma.dns2=1.1.1.1
+
+net.hspa.dns1=8.8.8.8
+net.hspa.dns2=1.1.1.1
+
+net.hsdpa.dns1=8.8.8.8
+net.hsdpa.dns2=1.1.1.1
+
+net.lte.dns1=8.8.8.8
+net.lte.dns2=1.1.1.1
+
+net.ltea.dns1=8.8.8.8
+net.ltea.dns2=1.1.1.1
+
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=1.1.1.1
+
+net.pdpbr1.dns1=8.8.8.8
+net.pdpbr1.dns2=1.1.1.1
+
+net.wlan0.dns1=8.8.8.8
+net.wlan0.dns2=1.1.1.1
+
+net.eth0.dns1=8.8.8.8
+net.eth0.dns2=1.1.1.1
+
+
+#
+# Signal Tweaks
+#
+persist.cust.tel.eons=1 
+ro.config.hw_fast_dormancy=1
+ro.config.combined_signal=true
+telephony.lteOnCdmaDevice=1
+ro.telephony.default_network=33,33
+
+
+#
+# Better call voice quality
+#
+ro.ril.enable.amr.wideband=1
+
+
+#
+# Bluetooth Bitrate
+#
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.bluetooth.disableabsvol=true
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.twsplussho=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+ro.bluetooth.remote.autoconnect=true
+ro.bluetooth.request.master=true
+ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+
+
+#
+# SMS APN Retry
+#
+ro.gsm.2nd_data_retry_config=max/_retries=3, 2000, 2000, 2000
+
+
+#
+# Support For IPV4 and IPV6
+#
+persist.telephony.support.ipv6=1
+persist.telephony.support.ipv4=1
